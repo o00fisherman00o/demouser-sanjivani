@@ -1,0 +1,86 @@
+#parent-login {
+    display: block;
+}
+
+#banner {
+    position: relative;
+    width: 70%;
+    height: 100vh;
+    background-image: url("images/preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s;
+}
+
+#login-area {
+    position: relative;
+    width: 30%;
+    height: 100vh;
+    background-color: #eceff3;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-box {
+    height: 470px;
+    width: 300px;
+    background-color: white;
+    box-shadow: rgb(41, 41, 41) 0px 0px 50px 0px;
+    border-radius: 5px;
+}
+
+#primary-login-form {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#forget-pwd-form {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#secondary-login-form {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#extra-option {
+    display: block;
+    margin: 0px;
+    border-right: rgb(194, 194, 194) solid 1px;
+}
+
+#extra-option>p {
+    cursor: pointer;
+}
+
+#extra-option>p:hover {
+    color: red;
+}
+
+@media only screen and (max-width: 768px) {
+    #banner {
+        width: 0%;
+        padding: 0%;
+    }
+    #login-area {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #banner {
+        width: 70%;
+    }
+    #login-area {
+        width: 30%;
+    }
+}
